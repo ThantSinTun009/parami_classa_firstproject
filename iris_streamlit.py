@@ -13,8 +13,8 @@ logo_path = "images/parami.jpg"
 if os.path.exists(logo_path):
     st.sidebar.image(logo_path, width=150)
 
-st.sidebar.markdown("**Student Name:** David")
-st.sidebar.markdown("**Student ID:** PU100000")
+st.sidebar.markdown("**Student Name:** Thant Sin Tun")
+st.sidebar.markdown("**Student ID:** PIUS20230003")
 
 
 s_l = st.number_input("Sepal Length (cm)", min_value=0.0, max_value=10.0, value=5.1, step=0.1)
@@ -37,3 +37,4 @@ if st.button("Predict"):
     flower_name=labels_names[result[0]]
     st.success(f"The predicted flower is **{flower_name}**")
     st.image(flower_images[flower_name], caption=f"{flower_name}",width=400)
+
